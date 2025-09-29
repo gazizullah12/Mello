@@ -2,7 +2,7 @@ module.exports.config = {
     name: "botinfo",
     version: "1.0.2", 
     hasPermssion: 0,
-    credits: "Arun Kumar", // Please don't change the credits
+    credits: "Prince Dilshad", // Please don't change the credits
     description: "Displays bot information.",
     commandCategory: "system",
     cooldowns: 1
@@ -14,9 +14,9 @@ module.exports.run = async function({ api, event }) {
         minutes = Math.floor((time % (60 * 60)) / 60),
         seconds = Math.floor(time % 60);
     const moment = require("moment-timezone");
-    const currentTime = moment.tz("Asia/Kolkata").format("『D/MM/YYYY』 【HH:mm:ss】");
+    const currentTime = moment.tz("Asia/Karachi").format("『D/MM/YYYY』 【HH:mm:ss】");
 
-    const botInfo = `=== 𝘼𝙍𝙐𝙉'𝙎 𝘽𝙊𝙏 ===\n\n`
+    const botInfo = `=== 𝙋𝙧𝙞𝙣𝙘𝙚 𝘿𝙞𝙡𝙨𝙝𝙖𝙙'𝙎 𝘽𝙊𝙏 ===\n\n`
         + `☄️ 𝘽𝙊𝙏 𝙉𝘼𝙈𝙀 ☄️ »» ${global.config.BOTNAME}\n`
         + `🌸 𝙋𝙍𝙀𝙁𝙄𝙓 🌸 »» ${global.config.PREFIX} ««\n\n`
         + `🥳 𝙐𝙋𝙏𝙄𝙈𝙀 🥳\n`
